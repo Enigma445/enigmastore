@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - ENIGMA WEARS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="signup-wrapper">
+        <h2>Sign Up</h2>
+        <form id="signup-form" action="#">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="\d{8}" title="Password must be exactly 8 digits" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" pattern="\d{8}" title="Password must be exactly 8 digits" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="home.html">Login here</a></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
